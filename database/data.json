@@ -1,0 +1,136 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Khóa luyện thi đại học",
+      "description": "Khóa luyện thi cho học sinh chuẩn bị thi đại học"
+    },
+    {
+      "id": 2,
+      "title": "Khóa học tiếng Anh giao tiếp",
+      "description": "Khóa học giúp nâng cao kỹ năng giao tiếp tiếng Anh trong các tình huống hàng ngày"
+    },
+    {
+      "id": 3,
+      "title": "Khóa học lập trình cơ bản",
+      "description": "Khóa học dành cho người mới bắt đầu học lập trình, bao gồm các ngôn ngữ lập trình phổ biến"
+    },
+    {
+      "id": 4,
+      "title": "Khóa học quản lý thời gian",
+      "description": "Khóa học cung cấp các kỹ năng và phương pháp quản lý thời gian hiệu quả để nâng cao năng suất làm việc"
+    },
+    {
+      "id": 5,
+      "title": "Khóa học kỹ năng mềm",
+      "description": "Khóa học tập trung vào việc phát triển các kỹ năng mềm như giao tiếp, làm việc nhóm và giải quyết vấn đề"
+    }
+  ],
+  "accountAdmin": {
+    "email": "admin1203@gmail.com",
+    "passWord": "admin1203"
+  },
+  "examSubjects": [
+    {
+      "id": 1,
+      "title": "Môn Toán",
+      "description": "Luyện thi đại học Toán học",
+      "courseId": 1
+    },
+    {
+      "id": 2,
+      "title": "Vật lý lớp 11",
+      "description": "Luyện thi Vật lí lớp 11",
+      "courseId": 2
+    },
+    {
+      "id": 3,
+      "title": "Hòa học lớp 10",
+      "courseId": 2,
+      "description": "Luyện thi Hóa học lớp 10"
+    }
+  ],
+  "exam": [
+    {
+      "id": 1,
+      "title": "Đề thi Toán học THPT Chuyên Lam Sơn Thanh Hóa",
+      "description": "Đề thi toán học năm 2023",
+      "duration": 90,
+      "examSubjectId": 1
+    },
+    {
+      "id": 2,
+      "title": "Đề thi Vật lý cơ bản lớp 11",
+      "description": "Đề thi gồm các câu hỏi cơ bản Vật lý 11",
+      "duration": 60,
+      "examSubjectId": 2
+    },
+    {
+      "id": 3,
+      "title": "Đề thi Hóa học cơ bản lớp 10",
+      "description": "Đề thi gồm các câu hỏi cơ bản về Hóa học lớp 10",
+      "duration": 45,
+      "examSubjectId": 3
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": " Phương trình có nghiệm X = ? X2-2X+1=0",
+      "examId": 1,
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "1"
+    },
+    {
+      "id": 2,
+      "question": "Định lí Pythagore áp dụng cho loại tam giác nào ?",
+      "options": [
+        "Tam giác vuông",
+        "Tam giác đều",
+        "Tam giác cân",
+        "Tam giác thường"
+      ],
+      "answer": "Tam giác vuông",
+      "examId": 2
+    }
+  ],
+  "userAnswers": [
+    {
+      "id": 1,
+      "useId": 1,
+      "exampId": 1,
+      "score": 15
+    },
+    {
+      "id": 2,
+      "useId": 2,
+      "exampId": 2,
+      "score": 8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "passWord": "xuannhat1",
+      "email": "xuannhatvn211@gmail.com",
+      "role": 1,
+      "profilePicture": "https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "status": 0
+    },
+    {
+      "id": 1,
+      "username": "user2",
+      "passWord": "xuannhat1",
+      "email": "xuannhatvn222@gmail.com",
+      "role": 0,
+      "profilePicture": "https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "status": 1
+    }
+  ]
+}
