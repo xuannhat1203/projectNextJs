@@ -84,7 +84,10 @@ export default function Page() {
     const listUser = data.users;
     const find = listUser.find((user) => user.email === email);
     if (find) {
-      if (find.passWord === passWord) {
+      if (find.status === 1) {
+        setError("Tài khoản bị chặn. Vui lòng liên hệ với quản trị viên!");
+        return;
+      } else if (find.passWord === passWord) {
         router.push("/admin/HomeAdmin");
       } else {
         setError("Sai mật khẩu. Vui lòng thử lại!");
